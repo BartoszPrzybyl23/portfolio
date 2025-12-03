@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="JDM blog case study" />
+        <title>Lipton · Website Redesign</title>
+        <link rel="icon" type="image/x-icon" href="assets/lsticker.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="project-page">
+        <header class="top-bar" id="top">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="logo" href="index.html">Bartosz Przybyl</a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation">
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                <nav class="primary-nav" id="primary-navigation">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#work">Case Studies</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#resume">Resume</a>
+                    <a href="index.html#contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="project-hero">
+                <div class="container project-hero-layout">
+                    <div class="project-hero-copy">
+                        <a class="back-link" href="index.html#work">← Back to all work</a>
+                        <p class="project-eyebrow">Case Study</p>
+                        <h1>Lipton Redesign</h1>
+                        <p class="project-lead">
+                            A complete UX redesign of Lipton’s global tea website, focusing on simplifying navigation, improving product categorisation, strengthening brand messaging, and creating a more modern, accessible user experience.
+                        </p>
+                        <div class="project-meta">
+                            <div>
+                                <span class="meta-label">Project Type</span>
+                                <span class="meta-value">UX Research · Web Redesign · UI Design</span>
+                            </div>
+                            <div>
+                                <span class="meta-label">Goal</span>
+                                <span class="meta-value">Create a clearer, more intuitive Lipton website for browsing teas, recipes, and brand purpose.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-hero-visual">
+                        <div class="hero-canvas project-canvas">
+                            <div class="project-hero-shape"></div>
+                            <img class="hero-laptop" src="assets/liptonl.png" alt="JDM blog mockup" />
+                            <img class="hero-mascot mascot mascot--point" src="assets/teasm.png" alt="Stickman pointing" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section jdm-section" id="lipton-overview">
+                <div class="container">
+                    <p class="jdm-eyebrow">01 — Overview</p>
+                    <h2>Lipton’s digital presence needed a UX overhaul to match the strength of its global brand.</h2>
+                    <p>
+                        The existing site had bold branding but a weak experience. Users described the navigation as confusing, content as inconsistent, and hierarchy as unclear. They struggled to browse teas, understand sustainability messaging, or join the Tea Club with confidence.
+                    </p>
+                    <p>
+                        Over 10 weeks I followed a full UX process—from research and problem framing through wireframes, design systems, high-fidelity UI, and user testing. The outcome is a completely redesigned website that emphasises clarity, structure, and modern storytelling.
+                    </p>
+                    <div class="jdm-meta">
+                        <p><strong>My Role:</strong> UX Research · UX Design · UI Design · Web Design</p>
+                        <p><strong>Tools:</strong> Figma · HTML/CSS · WordPress · Developer Tools</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="jdm-divider"></div>
+
+            <section class="section jdm-section" id="lipton-problem">
+                <div class="container">
+                    <p class="jdm-eyebrow">02 — The Problem</p>
+                    <p>
+                        Lipton is one of the most recognised tea brands in the world, but its website didn’t support users effectively. Research revealed that the experience felt outdated, visually confusing, and harder to use than competing tea brands.
+                    </p>
+                    <ul>
+                        <li>Navigation required too many steps for simple actions.</li>
+                        <li>Tea categories lacked structure, so browsing felt overwhelming.</li>
+                        <li>Key pages such as “Our Purpose” suffered from low contrast and weak hierarchy.</li>
+                        <li>Recipes were buried without labels, limiting discoverability.</li>
+                        <li>The Tea Club lacked clear benefits, incentives, or context.</li>
+                        <li>Small buttons, weak contrast, and inconsistent layouts reduced accessibility.</li>
+                    </ul>
+                    <p>These issues slowed the path to purchase and reduced trust in the brand’s digital experience.</p>
+                    <div class="project-slider" aria-label="Original Lipton website issues">
+                        <button class="slider-nav slider-prev" type="button" aria-label="Previous artifact">‹</button>
+                        <div class="slider-window">
+                            <div class="slider-track">
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Original homepage with cluttered navigation" />
+                                    <figcaption>Navigation Overload</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Purpose page showing low contrast text" />
+                                    <figcaption>Poor Readability</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Tea Club block with unclear benefits" />
+                                    <figcaption>Tea Club Confusion</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <button class="slider-nav slider-next" type="button" aria-label="Next artifact">›</button>
+                        <div class="slider-dots" role="tablist"></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="jdm-divider"></div>
+
+            <section class="section jdm-section" id="lipton-research">
+                <div class="container">
+                    <p class="jdm-eyebrow">03 — Research & Discovery</p>
+                    <h3>Competitor Insights</h3>
+                    <p>Analysed Twinings, Tetley, Clipper, and Lavazza to understand how modern tea brands communicate, organise content, and guide users through purchase journeys.</p>
+                    <ul>
+                        <li>How teas were categorised and filtered</li>
+                        <li>Approaches to storytelling and sustainability messaging</li>
+                        <li>Navigation models, menus, and hierarchy</li>
+                        <li>Homepage structures & featured content strategies</li>
+                        <li>Product detail layouts & comparison tools</li>
+                        <li>Recipe discovery patterns and filters</li>
+                    </ul>
+                    <div class="project-slider" aria-label="Competitor research artifacts">
+                        <button class="slider-nav slider-prev" type="button" aria-label="Previous artifact">‹</button>
+                        <div class="slider-window">
+                            <div class="slider-track">
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Competitive landscape grid" />
+                                    <figcaption>Competitor Grid</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Annotated navigation comparisons" />
+                                    <figcaption>Navigation Patterns</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Sustainability messaging collage" />
+                                    <figcaption>Sustainability Content</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <button class="slider-nav slider-next" type="button" aria-label="Next artifact">›</button>
+                        <div class="slider-dots" role="tablist"></div>
+                    </div>
+                    <h3>User Interviews</h3>
+                    <p>Interviews highlighted friction in the ordering process and a feeling that Lipton’s site didn’t meet modern expectations for clarity or usability.</p>
+                    <ul>
+                        <li>Desire for simple, clear product categories</li>
+                        <li>Need for faster ways to find specific teas</li>
+                        <li>Request for a more meaningful Tea Club overview</li>
+                        <li>Preference for cleaner, modern layouts</li>
+                        <li>Expectation of trustworthy, transparent storytelling</li>
+                    </ul>
+                    <p>Participants often ignored the “Purpose” messaging entirely because it was visually hidden or poorly structured.</p>
+                    <h3>Persona</h3>
+                    <p>A persona emerged: a daily tea drinker loyal to Lipton who wants a fast reorder path and a site that feels trustworthy and uncluttered.</p>
+                    <div class="project-image-frame">
+                        <img src="assets/placeholder-mockup.svg" alt="Persona overview summarising motivations" />
+                        <span class="image-caption">Persona overview.</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="jdm-divider"></div>
+
+            <section class="section jdm-section" id="lipton-problem-definition">
+                <div class="container">
+                    <p class="jdm-eyebrow">04 — Defining the Problem</p>
+                    <p>The core issue wasn’t the brand—it was the way information was presented and structured.</p>
+                    <ul>
+                        <li>The route to purchasing tea required unnecessary page transitions.</li>
+                        <li>Critical content blocks felt fragmented, causing confusion.</li>
+                        <li>Tea categories lacked clarity, forcing trial-and-error browsing.</li>
+                        <li>Brand values weren’t communicated despite strong sustainability work.</li>
+                        <li>Accessibility gaps (contrast, touch targets) reduced trust.</li>
+                    </ul>
+                    <p>These insights framed the redesign around clarity, structure, and consistent hierarchy.</p>
+                </div>
+            </section>
+
+            <div class="jdm-divider"></div>
+
+            <section class="section jdm-section" id="lipton-ideation">
+                <div class="container">
+                    <p class="jdm-eyebrow">05 — Ideation & Early UX</p>
+                    <p>Mind mapping explored improvements across navigation, categorisation, and content presentation while respecting Lipton’s legacy identity.</p>
+                    <p>Key opportunities identified:</p>
+                    <ul>
+                        <li>Simplify checkout and reorder journeys</li>
+                        <li>Create clear tea categories with strong labels</li>
+                        <li>Improve visibility of search, filters, and recipes</li>
+                        <li>Strengthen the Tea Club message and incentives</li>
+                        <li>Introduce modern CTAs, spacing, and component rhythms</li>
+                        <li>Build a layout system that stays stable inside WordPress</li>
+                    </ul>
+                    <p>Journey mapping illustrated bottlenecks and led to a simplified sitemap with five primary pages.</p>
+                    <div class="project-slider" aria-label="Early UX artifacts">
+                        <button class="slider-nav slider-prev" type="button" aria-label="Previous artifact">‹</button>
+                        <div class="slider-window">
+                            <div class="slider-track">
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Mind map detailing navigation ideas" />
+                                    <figcaption>Mind Map</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Journey map of the current experience" />
+                                    <figcaption>Journey Map</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Sitemap with five primary sections" />
+                                    <figcaption>Simplified Sitemap</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <button class="slider-nav slider-next" type="button" aria-label="Next artifact">›</button>
+                        <div class="slider-dots" role="tablist"></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="jdm-divider"></div>
+
+            <section class="section jdm-section" id="lipton-wireframes">
+                <div class="container">
+                    <p class="jdm-eyebrow">06 — Wireframes</p>
+                    <p>Low-fidelity and mid-fidelity wireframes explored modular structures that would be easy to maintain in a CMS.</p>
+                    <ul>
+                        <li>Homepage structure and hero layouts</li>
+                        <li>Tea category grids that flex across devices</li>
+                        <li>Recipe filtering with obvious states</li>
+                        <li>Purpose messaging hierarchy with layered typography</li>
+                        <li>Tea Club benefit blocks with clear incentives</li>
+                        <li>Responsive behaviours and modular spacing</li>
+                    </ul>
+                    <div class="project-slider" aria-label="Wireframe explorations">
+                        <button class="slider-nav slider-prev" type="button" aria-label="Previous artifact">‹</button>
+                        <div class="slider-window">
+                            <div class="slider-track">
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Homepage wireframe" />
+                                    <figcaption>Homepage Wire</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Tea category sketch" />
+                                    <figcaption>Tea Categories</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Purpose page mid-fidelity wire" />
+                                    <figcaption>Purpose Page</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <button class="slider-nav slider-next" type="button" aria-label="Next artifact">›</button>
+                        <div class="slider-dots" role="tablist"></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="jdm-divider"></div>
+
+            <section class="section jdm-section" id="lipton-design-system">
+                <div class="container">
+                    <p class="jdm-eyebrow">07 — Design System</p>
+                    <p>The design system modernises Lipton’s identity with clarity, readability, and accessible interactions.</p>
+                    <h4>Colour Palette</h4>
+                    <p>A refreshed version of Lipton’s palette: Lipton Yellow, Lipton Green, Pure White, and Deep Neutral Grey.</p>
+                    <h4>Typography</h4>
+                    <p>Roboto delivers readable, versatile typography across both desktop and mobile surfaces.</p>
+                    <h4>Component System</h4>
+                    <p>Accessible CTAs, card systems, structured grids, consistent spacing, and high-contrast sections ensure CMS stability.</p>
+                    <div class="project-image-frame">
+                        <img src="assets/placeholder-mockup.svg" alt="Design system snapshot" />
+                        <span class="image-caption">Colour, typography, and component references.</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="jdm-divider"></div>
+
+            <section class="section jdm-section" id="lipton-visual-design">
+                <div class="container">
+                    <p class="jdm-eyebrow">08 — Final Visual Design</p>
+                    <p>The final UI introduces Lipton’s story with a bold hero, clear navigation, spotlighted teas, sustainability content, and structured recipe modules.</p>
+                    <div class="project-slider" aria-label="Final visual design screens">
+                        <button class="slider-nav slider-prev" type="button" aria-label="Previous artifact">‹</button>
+                        <div class="slider-window">
+                            <div class="slider-track">
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Homepage hero redesign" />
+                                    <figcaption>Homepage Hero</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Tea category cards" />
+                                    <figcaption>Tea Categories</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Purpose storytelling block" />
+                                    <figcaption>Purpose Storytelling</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Recipe layout redesign" />
+                                    <figcaption>Recipe Layout</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Tea Club membership module" />
+                                    <figcaption>Tea Club Module</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <button class="slider-nav slider-next" type="button" aria-label="Next artifact">›</button>
+                        <div class="slider-dots" role="tablist"></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="jdm-divider"></div>
+
+            <section class="section jdm-section" id="lipton-testing">
+                <div class="container">
+                    <p class="jdm-eyebrow">09 — Testing & Iteration</p>
+                    <p>User testing surfaced opportunities to polish spacing, hierarchy, and feedback states.</p>
+                    <ul>
+                        <li>Improved text/background contrast</li>
+                        <li>Enlarged CTAs and touch targets</li>
+                        <li>Strengthened product card structure</li>
+                        <li>Clearer active states in navigation</li>
+                        <li>Better alignment and spacing across layouts</li>
+                    </ul>
+                    <div class="project-slider" aria-label="Testing refinements">
+                        <button class="slider-nav slider-prev" type="button" aria-label="Previous artifact">‹</button>
+                        <div class="slider-window">
+                            <div class="slider-track">
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Before and after spacing comparison" />
+                                    <figcaption>Spacing Refinements</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="CTA size adjustments" />
+                                    <figcaption>CTA Adjustments</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/placeholder-mockup.svg" alt="Navigation active state improvements" />
+                                    <figcaption>Navigation Feedback</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <button class="slider-nav slider-next" type="button" aria-label="Next artifact">›</button>
+                        <div class="slider-dots" role="tablist"></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="jdm-divider"></div>
+
+            <section class="section jdm-section" id="lipton-outcome">
+                <div class="container">
+                    <p class="jdm-eyebrow">10 — Outcome</p>
+                    <p>The redesign transforms Lipton’s online presence into a modern, structured, and engaging user experience.</p>
+                    <ul>
+                        <li>Navigation is cleaner and more intuitive.</li>
+                        <li>Tea categories and recipes are easier to browse.</li>
+                        <li>Brand storytelling now feels cohesive and trustworthy.</li>
+                        <li>Accessibility improvements increase user confidence.</li>
+                        <li>The Tea Club finally communicates clear value.</li>
+                        <li>The entire experience aligns with Lipton’s values.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="jdm-divider"></div>
+
+            <section class="section jdm-section" id="lipton-reflection">
+                <div class="container">
+                    <p class="jdm-eyebrow">11 — Reflection</p>
+                    <p>This project strengthened my research, wireframing, information architecture, and systems thinking skills.</p>
+                    <p>I learned how to redesign a large commercial brand while respecting its established identity and improving the UX through clarity, hierarchy, and accessibility.</p>
+                    <p>Future improvements could explore personalised recommendations, user accounts, and interactive Tea Club features.</p>
+                </div>
+            </section>
+
+            <section class="section project-cta">
+                <div class="container project-cta-card">
+                    <div>
+                        <h2>Want the full walkthrough?</h2>
+                        <p>Let’s set up a session. I’ll bring the prototypes and the stickman will bring snacks.</p>
+                    </div>
+                    <a class="contact-button" href="mailto:bartprzybyl@outlook.com">Book a chat</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>© <span id="year"></span> Bartosz Przybyl. Built with joy and too many stickman sketches.</p>
+                <a class="footer-link" href="#top">Back to top</a>
+            </div>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
