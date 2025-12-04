@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setupResearchCarousel();
   setupNavToggle();
-  setupVideoOverlays();
+  setupBackToTop();
 
 });
 
@@ -83,41 +83,17 @@ function setupNavToggle() {
   });
 }
 
-function setupVideoOverlays() {
-  const videoFrames = document.querySelectorAll(".video-frame");
-  if (!videoFrames.length) return;
+function setupBackToTop() {
+  const links = document.querySelectorAll(".footer-link");
+  if (!links.length) return;
 
-  videoFrames.forEach((frame) => {
-    const video = frame.querySelector("video");
-    const overlay = frame.querySelector(".video-play-overlay");
-    if (!video || !overlay) return;
-
-    video.controls = false;
-
-    const hideOverlay = () => overlay.classList.add("is-hidden");
-    const showOverlay = () => overlay.classList.remove("is-hidden");
-
-    const stop = (event) => event.stopPropagation();
-
-    overlay.addEventListener("pointerdown", stop);
-    video.addEventListener("pointerdown", stop);
-
-    overlay.addEventListener("click", (event) => {
-      event.stopPropagation();
-      video.controls = true;
-      video.play();
-      hideOverlay();
-    });
-
-    video.addEventListener("play", hideOverlay);
-    video.addEventListener("pause", () => {
-      if (video.currentTime === 0 || video.paused) {
-        showOverlay();
+  links.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const target = link.getAttribute("href");
+      if (target === "#top") {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
       }
-    });
-    video.addEventListener("ended", () => {
-      video.controls = false;
-      showOverlay();
     });
   });
 }
